@@ -1,4 +1,4 @@
-const Parse = require('../Utils/parser.js');
+const Parse = require('../Utils/MEE6Parse.js');
 
 module.exports = async (client, message) => {
     Parse(message);
