@@ -37,7 +37,7 @@ module.exports = class OutpostClient extends Discord.Client {
         this.commands.delete(commandName)
     }
 
-    loadCommands() {
+    loadCommands() { // This was meant for my other bot, also works here. This allows recursive adding of files (meaning you can seperate your commands into folders.
         klaw("./Commands/").on('data', (item) => {
             const file = path.parse(item.path);
             if (!file.ext || file.ext !== '.js') return;
@@ -50,7 +50,7 @@ module.exports = class OutpostClient extends Discord.Client {
         fs.readdir("./Events/", (err, files) => {
             if (err) return console.error(err);
             files.forEach(file => {
-                const event = require(`C:\\Users\\Joe\\Documents\\Joe's Documents\\TLOBot Rewrite\\Events\\${file}`);
+                const event = require(`../Events/${file}`);
                 let eventName = file.split(".")[0];
                 this.on(eventName, event.bind(null, this));
             });
