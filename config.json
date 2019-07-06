@@ -2,6 +2,7 @@
     "owner": "Bot Owner ID",
     "token": "Bot Token",
     "prefix": "Bot Prefix",
+    "logChannel": "Channel to log bot events.",
     "color": 3380206,
     "levelOptions": {
         "message": "MEE6 levelup message to parse.",
