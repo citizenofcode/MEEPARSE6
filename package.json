@@ -1,5 +1,5 @@
 {
-  "name": "mee6-parse",
+  "name": "MEEPARSE6",
   "version": "1.0.0",
   "description": "Parses MEE6's messages to give roles based on preset level requirements.",
   "main": "index.js",
@@ -17,6 +17,6 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node index.js"
   },
-  "author": "JoeGamez",
+  "author": "Joe",
   "license": "MIT"
 }
